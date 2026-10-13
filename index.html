@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>ts-render-bridge</title>
+  <style>
+    body {
+      font-family: system-ui, sans-serif;
+      padding: 24px;
+      background: #f9f9f9;
+    }
+    h1 { color: #222; }
+    #dom-root, #svg-root { margin-top: 16px; }
+    canvas { border: 1px solid #ccc; margin-top: 16px; }
+  </style>
+</head>
+<body>
+  <h1>Render Bridge Demo</h1>
+
+  <h2>DOM</h2>
+  <div id="dom-root"></div>
+
+  <h2>Canvas</h2>
+  <canvas id="canvas-root" width="400" height="200"></canvas>
+
+  <h2>SVG</h2>
+  <svg id="svg-root" width="400" height="200"></svg>
+
+  <script type="module" src="/src/index.ts"></script>
+</body>
+</html>
